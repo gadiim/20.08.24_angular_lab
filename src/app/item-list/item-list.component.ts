@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-item-list',
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './item-list.component.css'
 })
 export class ItemListComponent {
-
+  @Input() nickname:string='';
+  @Input() pass:string='';
 }

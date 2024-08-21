@@ -1,3 +1,11 @@
-<div>
-<app-greeting [quote] = 'quote' [name] = 'name'></app-greeting>
-</div>
+
+<app-greeting [quote]='quote' [name]='name'></app-greeting>
+
+<fieldset>
+  <legend>TASK 3</legend>
+  <ol>
+    <li *ngFor="let data of personalData"><b>profile:</b>
+      <app-item-list [nickname]="data.nickname" [pass]="data.pass"></app-item-list>
+    </li>
+  </ol>
+</fieldset>
